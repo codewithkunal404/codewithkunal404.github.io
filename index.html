@@ -25,7 +25,7 @@
       animationEnabled: true,
       title: {
           text: "Experts on ",                
-          fontColor: "#0d6efd"
+          fontColor: "	#202020"
       },	
       axisY: {
           tickThickness: 0,
@@ -38,7 +38,7 @@
           tickThickness: 0,
           lineThickness: 0,
           labelFontSize: 14,
-          labelFontColor: "#0d6efd"				
+          labelFontColor: "	#202020"				
       },
       data: [{
           indexLabelFontSize: 18,
@@ -47,7 +47,7 @@
           indexLabelFontColor: "white",
           indexLabelFontWeight: 200,
           indexLabelFontFamily: "Verdana",
-          color: "#0d6efd",
+          color: "	#202020",
           type: "bar",
           dataPoints: [
               { y: 45, label: "45%", indexLabel: "Javascript" },
@@ -64,6 +64,15 @@
   }
 
   </script>
+
+  <style>
+    html{
+      scroll-behavior: smooth;
+    }
+    body{
+      overflow-x: hidden;
+    }
+  </style>
   
 
 </head>
@@ -71,12 +80,12 @@
 
     <!-- head -->
 
-    <div class="container-fluid p-3 text-center text-white bg-primary" style="position: fixed; top: 0%;z-index: 2;">
+    <div class="container-fluid p-3 text-center text-white bg-dark">
 <h1 data-aos="zoom-in"><i class="fas fa-laptop-code"></i>&nbsp;&nbsp;CodeWithKunal</h1>
     </div>
 
 <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-3 mb-5 bg-body rounded" style="position: fixed; top: 11%; width:100%;z-index: 2;">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow  bg-body rounded" >
         <div class="container-fluid ">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo03" aria-controls="navbarTogglerDemo03" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -121,7 +130,7 @@
         </div>
       </nav>
 
-    <div class="container" style="margin-top: 30vh;" >
+    <div class="container mt-5" >
       <div class="row ">
         <div class="col-sm-6" data-aos="fade-right">
           <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
@@ -173,21 +182,22 @@
         <div class="col-sm-5 text-center p-5" data-aos="zoom-in" >
           <h1>Welcome! I AM KUNAL</h1>
           <h2 class="text-muted">WebDesigner</h2>
-          <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Commodi quibusdam maiores animi cupiditate nihil illo aliquid facilis rem sequi dicta earum quia totam reiciendis quo corrupti dolores, omnis quod vel?</p>
           <i class="fab fa-html5 fa-2x text-danger shadow p-3 mb-3 bg-body rounded"></i>
           <i class="fab fa-css3-alt fa-2x text-primary shadow p-3 mb-3 bg-body rounded"></i>
           <i class="fab fa-js fa-2x text-warning shadow p-3 mb-3 bg-body rounded"></i>
           <i class="fab fa-bootstrap fa-2x text-info shadow p-3 mb-3 bg-body rounded"></i>
 
+      <div id="chartContainer" style="height: 180px; width:100%; "></div>
+
+
         </div>
       </div>
 
-      <div id="chartContainer" style="height: 300px; width:100%; margin-top: 20vh;"  data-aos="flip-left" ></div>
 
     </div>
 
-      <div class="container-fluid p-3  bg-primary text-center text-white"  style="margin-top: 20vh;">
-        <h1 data-aos="zoom-in">Our Work Plan&nbsp;<i class="fas fa-paper-plane"></i></h1>
+      <div class="container-fluid p-5 bg-dark text-center text-white"  style="margin-top: 20vh;">
+        <h1 data-aos="fade-right">Our Work Plan&nbsp;<i class="fas fa-paper-plane"></i></h1>
       </div>
 
       <div class="container p-5 " style="margin-top: 10vh;">
@@ -221,24 +231,245 @@
 
 
 
-        <div class="container-fluid p-2 mt-5 bg-primary text-center text-white" >
+        <div class="container-fluid p-5 mt-5 bg-dark text-center text-white" >
 
-          <h1 data-aos="fade-in">How to reach me&nbsp;&nbsp;<i class="fas fa-users"></i></h1>
+          <h1 data-aos="fade-right">How to reach me&nbsp;&nbsp;<i class="fas fa-users"></i></h1>
 
         </div>
         <div class="container" style="padding: 10%;" >
 
           <div class="row text-center" style="transform: scale(1);">
-            <div  data-aos="fade-up" class="col shadow p-3 mb-3 bg-body rounded"><h1><i  class="fab fa-whatsapp fa-2x text-success" ></i></h1> <h1 class="counter" >300</h1></div>
-            <div  data-aos="fade-up" class="col shadow p-3 mb-3 bg-body rounded"><h1><i class="fab fa-facebook-f fa-2x text-primary"></i></h1> <h1 class="counter" >800</h1></div>
-            <div  data-aos="fade-up"   class="col shadow p-3 mb-3 bg-body rounded"><h1><i class="fab fa-instagram fa-2x " style="color:#8a3ab9;"></i></h1> <h1 class="counter" >1200</h1></div>
-            <div data-aos="fade-up"   class="col shadow p-3 mb-3 bg-body rounded"><h1><i class="fab fa-youtube fa-2x" style="color: red;"></i></h1><h1 class="counter"  >1300</h1></div>
-            <div  data-aos="fade-up"   class="col shadow p-3 mb-3 bg-body rounded"><h1><i class="fab fa-github fa-2x" style="color: rgb(95, 89, 89);"></i></h1> <h1 class="counter" >2300</h1></div>
-            <div data-aos="fade-up"   class="col shadow p-3 mb-3 bg-body rounded"><h1><i class="fab fa-twitter fa-2x" style="color:rgb(58, 135, 223)"></i></h1> <h1 class="counter" >500</h1></div>
-          </di>
+            <div  data-aos="fade-up" class="col shadow p-3 mb-3 bg-body rounded"><h1><i  class="fab fa-whatsapp fa-1x text-success" ></i></h1> <h1 class="counter" >300</h1></div>
+            <div  data-aos="fade-up" class="col shadow p-3 mb-3 bg-body rounded"><h1><i class="fab fa-facebook-f fa-1x text-primary"></i></h1> <h1 class="counter" >800</h1></div>
+            <div  data-aos="fade-up"   class="col shadow p-3 mb-3 bg-body rounded"><h1><i class="fab fa-instagram fa-1x " style="color:#8a3ab9;"></i></h1> <h1 class="counter" >1200</h1></div>
+            <div data-aos="fade-up"   class="col shadow p-3 mb-3 bg-body rounded"><h1><i class="fab fa-youtube fa-1x" style="color: red;"></i></h1><h1 class="counter"  >1300</h1></div>
+            <div  data-aos="fade-up"   class="col shadow p-3 mb-3 bg-body rounded"><h1><i class="fab fa-github fa-1x" style="color: rgb(95, 89, 89);"></i></h1> <h1 class="counter" >2300</h1></div>
+            <div data-aos="fade-up"   class="col shadow p-3 mb-3 bg-body rounded"><h1><i class="fab fa-twitter fa-1x" style="color:rgb(58, 135, 223)"></i></h1> <h1 class="counter" >500</h1></div>
+          </div>
         </div>
         
+        <div class="container-fluid p-5 mt-5 bg-dark text-center text-white" >
 
+          <h1 data-aos="fade-right">Our Blogpost&nbsp;&nbsp;<i class="fab fa-blogger-b"></i></h1>
+
+        </div>
+
+
+
+<div class="container mt-5">
+  <div class="row">
+    <div class="col-sm-4 " data-aos="fade-up" >
+      <h2> Hello! <br> I am Kunal <br> WebDesigner</h2>
+      <h5><img src="https://images.pexels.com/photos/1181275/pexels-photo-1181275.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500" width="80%"></h5>
+      <div class="fakeimg">Fake Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+      <h3 class="mt-4">Some Links</h3>
+      <p>Lorem ipsum dolor sit ame.</p>
+      <ul class="nav nav-pills flex-column ">
+        <li class="nav-item">
+          <a class="nav-link active bg-dark" href="#">Html</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">Css</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark" href="#">Javascript</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark " href="#">Bootstrap</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark " href="#">Jquery</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-dark " href="#">Php</a>
+        </li>
+      </ul>
+      <hr class="d-sm-none">
+    </div>
+
+    <div class="col-sm-4 " data-aos="fade-up">
+      <h2>HTML</h2>
+      <h5>Introduction</h5>
+      <div class="fakeimg icon"><i class="fab fa-html5 fa-2x"></i></div>
+      <p>Basic concept</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+      <h2 class="mt-5">Css</h2>
+      <h5>Title description, Sep 2, 2020</h5>
+      <div class="fakeimg icon"><i class="fab fa-css3-alt fa-2x"></i></div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  
+  
+
+      <h2 class="mt-5">Javascript</h2>
+      <h5>Title description, Sep 2, 2020</h5>
+      <div class="fakeimg icon"><i class="fab fa-js-square fa-2x"></i></div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  
+  
+  
+    </div>
+
+
+    <div class="col-sm-4 " data-aos="fade-up" >
+      <h2>HTML</h2>
+      <h5>Introduction</h5>
+      <div class="fakeimg icon"><i class="fab fa-html5 fa-2x"></i></div>
+      <p>Basic concept</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+
+      <h2 class="mt-5">Css</h2>
+      <h5>Title description, Sep 2, 2020</h5>
+      <div class="fakeimg icon"><i class="fab fa-css3-alt fa-2x"></i></div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  
+  
+
+      <h2 class="mt-5">Javascript</h2>
+      <h5>Title description, Sep 2, 2020</h5>
+      <div class="fakeimg icon"><i class="fab fa-js-square fa-2x"></i></div>
+      <p>Some text..</p>
+      <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+  
+  
+  
+    </div>
+    
+  </div>
+
+
+  
+</div>
+
+   <div class="container-fluid p-5 mt-5 bg-dark text-center text-white" >
+
+          <h1 data-aos="fade-right">Our Projects&nbsp;&nbsp;<i class="fas fa-folder-open"></i></h1>
+
+        </div>
+
+        <div class="container mt-5" >
+
+<div class="row  text-center  " style="transform: scale(0.9);">
+  <div class="col shadow p-3 mb-5 bg-body rounded" data-aos="fade-left" data-aos-duration="2000" ><i class="fas fa-folder-open fa-3x text-success"></i><h3>HTML</h3>
+<h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sint.</h6></div>
+  <div class="col   shadow p-3 mb-5 bg-body rounded "  data-aos="fade-left" data-aos-duration="2000"><i class="fas fa-folder-open fa-3x text-danger"></i><h3>CSS</h3><h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sint.</h6></div>
+  <div class="col   shadow p-3 mb-5 bg-body rounded" data-aos="fade-left" data-aos-duration="2000"><i class="fas fa-folder-open fa-3x text-success"></i><h3>Javascript</h3><h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sint.</h6></div>
+  <div class="col   shadow p-3 mb-5 bg-body rounded" data-aos="fade-left" data-aos-duration="2000"><i class="fas fa-folder-open fa-3x text-primary"></i><h3>Jquery</h3><h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sint.</h6></div>
+  <div class="col   shadow p-3 mb-5 bg-body rounded" data-aos="fade-left" data-aos-duration="2000"><i class="fas fa-folder-open fa-3x text-warning"></i><h3>Bootstrap</h3><h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sint.</h6></div>
+  <div class="col   shadow p-3 mb-5 bg-body rounded" data-aos="fade-left" data-aos-duration="2000"><i class="fas fa-folder-open fa-3x text-muted"></i><h3>PHP</h3><h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sint.</h6></div>
+
+</div>
+
+<div class="row  text-center  " style="transform: scale(0.9);">
+  <div class="col shadow p-3 mb-5 bg-body rounded" data-aos="fade-left" data-aos-duration="2000" ><i class="fas fa-folder-open fa-3x text-success"></i><h3>Others</h3>
+<h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sint.</h6></div>
+  <div class="col   shadow p-3 mb-5 bg-body rounded"  data-aos="fade-left" data-aos-duration="2000"><i class="fas fa-folder-open fa-3x text-danger"></i><h3>Animation</h3><h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sint.</h6></div>
+  <div class="col   shadow p-3 mb-5 bg-body rounded" data-aos="fade-left" data-aos-duration="2000"><i class="fas fa-folder-open fa-3x text-success"></i><h3>Templates</h3><h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sint.</h6></div>
+  <div class="col   shadow p-3 mb-5 bg-body rounded" data-aos="fade-left" data-aos-duration="2000"><i class="fas fa-folder-open fa-3x text-primary"></i><h3>Hovereffect</h3><h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sint.</h6></div>
+  <div class="col   shadow p-3 mb-5 bg-body rounded" data-aos="fade-left" data-aos-duration="2000"><i class="fas fa-folder-open fa-3x text-warning"></i><h3>Skills</h3><h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sint.</h6></div>
+  <div class="col   shadow p-3 mb-5 bg-body rounded" data-aos="fade-left" data-aos-duration="2000"><i class="fas fa-folder-open fa-3x text-muted"></i><h3>Modules</h3><h6>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae, sint.</h6></div>
+
+</div>
+
+
+
+        </div>
+
+        
+        <div class="container mt-5 ">
+          <div class="row">
+            <div class="col text-center"><h1>#Feedback</h1>
+            <hr></div>
+
+          </div>
+        <div class="container" ">
+            <div class="row mt-5">
+
+
+              <div class="col">
+  
+                <form class="row g-3">
+                  <div class="col-md-6">
+                    <label for="inputEmail4" class="form-label">Email</label>
+                    <input type="email" class="form-control" id="inputEmail4">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputPassword4" class="form-label">Password</label>
+                    <input type="password" class="form-control" id="inputPassword4">
+                  </div>
+                  <div class="col-12">
+                    <label for="inputAddress" class="form-label">Address</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                  </div>
+                  <div class="col-12">
+                    <label for="inputAddress2" class="form-label">Address 2</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                  </div>
+                  <div class="col-md-6">
+                    <label for="inputCity" class="form-label">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                  </div>
+                  <div class="col-md-4">
+                    <label for="inputState" class="form-label">State</label>
+                    <select id="inputState" class="form-select">
+                      <option selected>Choose...</option>
+                      <option>...</option>
+                    </select>
+                  </div>
+                  <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Zip</label>
+                    <input type="text" class="form-control" id="inputZip">
+                  </div>
+                  <div class="col-12">
+                    <div class="form-check">
+                      <input class="form-check-input" type="checkbox" id="gridCheck">
+                      <label class="form-check-label" for="gridCheck">
+                        Check me out
+                      </label>
+                    </div>
+                  </div>
+                  <div class="col-12">
+                    <button type="submit" class="btn btn-dark">Send</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="container-fluid p-3 mt-5 bg-dark text-white text-center">
+
+          <h5>copyright&copy;2021-22 Designed by kunal chaudhary </h5>
+          <h6 class="text-muted">mobileno-&nbsp;+0226266252552 &nbsp; gmail:&nbsp;kunalchaudhary1002@gmail.com</h6> <br>
+          
+          
+          <a href="#" class="text-white">Home</a>&nbsp;
+          <a href="#"class="text-white">Aboutus</a>&nbsp;
+          <a href="#"class="text-white">Contactus</a>&nbsp;
+          <a href="#"class="text-white">Projects</a>&nbsp;
+          <a href="#"class="text-white">Feedback</a>&nbsp;
+          <a href="#"class="text-white">Github</a>&nbsp;
+          <br>
+          <br>
+          <i  class="fab fa-whatsapp  text-white" ></i>&nbsp;&nbsp;
+          <i  class="fab fa-facebook-f  text-white" ></i>&nbsp;&nbsp;
+          <i  class="fab fa-instagram  text-white" ></i>&nbsp;&nbsp;
+          <i  class="fab fa-youtube text-white" ></i>&nbsp;&nbsp;
+          <i  class="fab fa-github text-white" ></i>&nbsp;&nbsp;
+          <i  class="fab fa-twitter  text-white" ></i>&nbsp;&nbsp;
+
+
+        </div>
+
+
+
+
+        
 
      
   
